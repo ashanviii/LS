@@ -1,0 +1,149 @@
+@keyframes swing-in-top-fws {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: 50%0;
+  }
+  to {
+    transform: rotate(90deg);
+    transform-origin: 50%0;
+  }
+}
+.card-04-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-darkslategray);
+  box-shadow: 6px 4px 11px rgba(0, 0, 0, 0.11);
+  width: 389px;
+  height: 267px;
+}
+.full-traceability {
+  position: absolute;
+  top: 67px;
+  left: calc(50% - 175.5px);
+  font-weight: 600;
+}
+.with-blockchain-every {
+  position: absolute;
+  top: 103px;
+  left: 19px;
+  font-size: var(--font-size-base);
+  font-family: var(--font-roboto-flex);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  width: 350px;
+  height: 98px;
+}
+.card-01-child,
+.card-04 {
+  position: absolute;
+  top: 518px;
+  left: 526px;
+  width: 389px;
+  height: 267px;
+}
+.card-01-child {
+  top: 0;
+  left: 0;
+  background-color: var(--color-darkslategray);
+  box-shadow: 5px 4px 18px rgba(0, 0, 0, 0.11);
+}
+.low-bureaucracy,
+.say-goodbye-to {
+  position: absolute;
+  top: 56px;
+  left: calc(50% - 171.5px);
+}
+.say-goodbye-to {
+  top: 99px;
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  width: 331px;
+}
+.card-01 {
+  position: absolute;
+  top: 212px;
+  left: 83px;
+  width: 389px;
+  height: 267px;
+  font-family: var(--font-roboto-flex);
+}
+.lower-the-liquidity {
+  position: absolute;
+  top: 41px;
+  left: calc(50% - 158.5px);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  width: 317px;
+}
+.blockchain-technology-allows {
+  position: absolute;
+  top: 124px;
+  left: 36px;
+  font-size: var(--font-size-base);
+  font-family: var(--font-roboto-flex);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  width: 340px;
+}
+.card-02 {
+  position: absolute;
+  top: 212px;
+  left: 526px;
+  width: 389px;
+  height: 267px;
+}
+.we-safeguard-your,
+.your-investments-are {
+  position: absolute;
+  left: calc(50% - 160.5px);
+  display: flex;
+  align-items: center;
+}
+.we-safeguard-your {
+  top: 26px;
+  font-weight: 600;
+  width: 344px;
+}
+.your-investments-are {
+  top: 124px;
+  font-size: var(--font-size-base);
+  font-family: var(--font-roboto-flex);
+  color: var(--color-white);
+  width: 343px;
+}
+.card-03 {
+  position: absolute;
+  top: 212px;
+  left: 969px;
+  width: 389px;
+  height: 267px;
+}
+.why-we-use {
+  position: absolute;
+  top: calc(50% - 341px);
+  left: calc(50% - 376px);
+  font-size: var(--font-size-45xl);
+  color: var(--color-darkslategray);
+}
+.why-we-use:hover {
+  animation: 2s ease 0s 1 normal none swing-in-top-fws;
+  opacity: 1;
+}
+.learn-more-page {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 836px;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-orangered);
+  font-family: var(--font-inter);
+}

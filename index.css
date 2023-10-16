@@ -1,0 +1,2197 @@
+
+.email,
+.social-media {
+  position: absolute;
+  font-weight: 600;
+}
+.social-media {
+  top: 165px;
+  left: 73%;
+  display: flex;
+  align-items: center;
+  width: 156px;
+  height: 28px;
+}
+.email {
+  top: 164px;
+  left: calc(50% - 635.5px);
+}
+.instagram {
+  left: 1123px;
+  cursor: pointer;
+}
+.instagram,
+.twitter,
+.facebook {
+  position: absolute;
+  top: 216px;
+  width: 60px;
+  height: 58px;
+  object-fit: cover;
+}
+.facebook {
+  left: 1231px;
+  cursor: pointer;
+}
+.twitter {
+  left: 1339px;
+}
+.armandkamgarhecedu1 {
+  color: inherit;
+}
+.armandkamgarhecedu {
+  margin-bottom: 0;
+}
+.mmetralieu2018alumnieduie {
+  color: var(--font-inherit);
+}
+.armandkamgarhecedu-mmetral {
+  position: absolute;
+  top: 216px;
+  left: calc(50% - 671.5px);
+  font-size: var(--font-inherit);
+  text-decoration: underline;
+  line-height: 135.9%;
+  font-weight: 500;
+  font-family: var(--font-inherit);
+  color: var(--font-inherit);
+  display: flex;
+  align-items: center;
+  width: 429px;
+}
+.liquidstate {
+  position: absolute;
+  top: 82px;
+  left: 37px;
+  font-size: var(--font-size-17xl);
+  letter-spacing: 0.06em;
+  font-family: var(--font-inter);
+  color: #a4c2f0;
+}
+.contacts,
+.frame {
+  position: absolute;
+  width: 100%;
+}
+.contacts {
+  top: 7848px;
+  left: 0%;
+  background-color: var(--color-darkslategray);
+  height: 6%;
+  color: var(--color-gray-700);
+  font-family: var(--font-montserrat);
+ 
+}
+
+
+
+
+/*
+********** NUTSHELL **********
+*/
+
+
+
+.frame {
+  top: 0;
+  left: 0;
+  background-color: var(--color-white);
+  height: 871px;
+}
+.liquidstate-in-a {
+  position: absolute;
+  top: 236px;
+  left: calc(50% + 37.5px);
+}
+.smaller-investment-tickets {
+  margin-bottom: 18px;
+}
+.smaller-investment-tickets-tha {
+  margin: 0;
+  padding-left: var(--padding-13xl);
+}
+.smaller-investment-tickets-container {
+  position: absolute;
+  top: 349px;
+  left: 763.94px;
+  font-size: 18px;
+  line-height: 160.4%;
+  font-family: 'Roboto Flex';
+  display: inline-block;
+  width: 588px;
+}
+.smaller-investment-tickets-container:hover {
+  animation: 1s ease 0s 1 normal none fade-in;
+  opacity: 1;
+}
+.nutshell-image-icon {
+  position: absolute;
+  top: 112px;
+  left: 0;
+  width: 661px;
+  height: 647px;
+  object-fit: cover;
+}
+.nutshell {
+  position: absolute;
+  top: 6976px;
+  left: 0;
+  width: 100%;
+  height: 10.63%;
+  font-size: var(--font-size-29xl);
+}
+.of-real-estate {
+  margin: 0;
+}
+
+/* Your CSS styles here */
+
+/* Initial styles for the image, heading, and written content */
+.nutshell-image-icon, .smaller-investment-tickets-container, .liquidstate-in-a {
+  opacity: 0;
+  transform: translateX(0);
+  animation-play-state: paused;
+}
+
+/* Add keyframe animations for sliding in */
+.nutshell-image-icon {
+  animation: slideInFromLeft 2s forwards;
+}
+
+.smaller-investment-tickets-container {
+  animation: slideInFromRight 2s forwards;
+}
+
+.liquidstate-in-a {
+  animation: slideInFromRight 2.5s forwards;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+
+
+/*
+********** OVERVIEW **********
+*/
+
+
+
+.overview-of-real-container {
+  position: absolute;
+  top: 148px;
+  left: calc(50% - 394px);
+}
+.chart-image-icon {
+  position: relative;
+  width: 836px;
+  height: 288px;
+  object-fit: cover;
+}
+.chart {
+  position: absolute;
+  top: calc(50% - 60px);
+  left: calc(50% - 473.5px);
+  background-color: var(--color-white);
+  box-shadow: 30px 29px 39px rgba(0, 0, 0, 0.25);
+  width: 947px;
+  height: 395px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 53px 0;
+  box-sizing: border-box;
+}
+.blockchain-logo,
+.overview {
+  position: absolute;
+  width: 1417px;
+}
+.overview {
+  top: 6128px;
+  left: 0;
+  height: 848px;
+  width: 100%;
+  background-image: url(./public/overview@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: center;
+  font-size: var(--font-size-29xl);
+  color: var(--color-white);
+}
+/* Initial styles for the chart and title */
+.chart {
+  opacity: 0; /* Chart initially hidden */
+  transition: opacity 1.5s;
+}
+
+
+
+
+/*
+********** BLOCKCHAIN **********
+*/
+
+
+.blockchain-logo {
+  top: 0;
+  left: -3px;
+  background-color: var(--color-white);
+  height: 1012px;
+}
+.blockchain1 {
+  position: absolute;
+  top: 137px;
+  left: 40%;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  width: 345px;
+}
+
+.at-liquidestate-we,
+.experience-the-future,
+.the-technology-that {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.the-technology-that {
+  top: 240px;
+  left: 27%;
+  font-size: 32px;
+  color: var(--color-orangered);
+  width: 735px;
+}
+.at-liquidestate-we:hover,
+.experience-the-future:hover,
+.the-technology-that:hover {
+  animation: 1s ease 0s 1 normal none fade-in;
+  opacity: 1;
+}
+.at-liquidestate-we,
+.experience-the-future {
+  font-family: var(--font-roboto-flex);
+}
+.experience-the-future {
+  top: 298px;
+  left: 15%;
+  font-size: var(--font-size-xl);
+  width: 1144px;
+  height: 62.16px;
+}
+.at-liquidestate-we {
+  height: calc(100% - 912.24px);
+  width: calc(100% - 854px);
+  top: 527px;
+  left: 697px;
+  font-size: var(--font-size-5xl);
+}
+.get-early-access {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  font-weight: 600;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: center;
+}
+.get-early-access-button {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-mid) 22px;
+  background-color: var(--color-orangered);
+  position: absolute;
+  width: 16.83%;
+  top: 678px;
+  right: 12.59%;
+  left: 70.58%;
+  height: 67px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.learn-more {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  font-weight: 500;
+  font-family: var(--font-inter);
+  color: var(--color-orangered);
+  text-align: center;
+}
+.learn-more-button {
+  cursor: pointer;
+  border: 1px solid var(--color-orangered);
+  padding: var(--padding-lgi) 52px;
+  background-color: var(--color-white);
+  position: absolute;
+  width: 16.62%;
+  top: 678px;
+  right: 32.6%;
+  left: 50.78%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.bloackchain-logo-box {
+  position: relative;
+  background-color: var(--color-white);
+  box-shadow: 0 6px 16px 6px rgba(0, 0, 0, 0.14);
+  width: 436px;
+  height: 429px;
+  z-index: 0;
+}
+.blockchain-1-icon {
+  position: absolute;
+  margin: 0 !important;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.icon-container {
+  position: absolute;
+  top: 446px;
+  left: calc(50% - 605px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-3xs);
+}
+.blockchain,
+.investment-opportunities {
+  position: absolute;
+  font-size: var(--font-size-45xl);
+}
+.blockchain {
+  top: 5115px;
+  left: 0%;
+  width: 100%;
+  height: 1013px;
+  text-align: center;
+}
+/* Define the default button style */
+.get-early-access-button {
+  background-color: #FF621B; /* Change to your desired background color */
+  color: #fff; /* Change to your desired text color */ /* Add a border to the button */
+  transition: all 0.3s; /* Add a smooth transition effect */
+  box-shadow: 14px 14px 4px rgba(0, 0, 0, 0); /* No shadow by default */
+}
+
+/* Define the hover effect style */
+.get-early-access-button:hover {
+  background-color: #263747; /* Change to your desired background color on hover */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add a 3D shadow on hover */
+}
+.learn-more-button {
+  background-color: #ffffff; /* Change to your desired background color */
+  color: #fff; /* Change to your desired text color */ /* Add a border to the button */
+  transition: all 0.3s; /* Add a smooth transition effect */
+  box-shadow: 14px 14px 4px rgba(0, 0, 0, 0); /* No shadow by default */
+}
+
+/* Define the hover effect style */
+.learn-more-button:hover {
+  background-color: #263747; /* Change to your desired background color on hover */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* Add a 3D shadow on hover */
+}
+
+
+/* Initially, hide the text off the right side */
+.slide-in-right {
+  transform: translateX(100%);
+  transition: transform 2.5s ease;
+}
+
+/* Apply the slide-in animation when the 'in-view' class is added */
+.in-view .slide-in-right {
+  transform: translateX(0);
+}
+
+
+
+
+
+/*
+********** INVESTMENT OPPORTUNIYIES **********
+*/
+
+
+
+.investment-opportunities {
+  top: 94px;
+  left: calc(50% - 401.5px);
+  font-family: var(--font-inter);
+  color: var(--color-white);
+}
+.real-estate-card-child {
+  position: absolute;
+  top: 22px;
+  left: 0;
+  border-radius: var(--br-8xs);
+  background-color: var(--color-gray-100);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  width: 327px;
+  height: 480px;
+}
+.real-estate-card-item {
+  position: absolute;
+  top: 22px;
+  left: 0;
+  border-radius: var(--br-8xs) var(--br-8xs) 0 0;
+  width: 327px;
+  height: 212px;
+  object-fit: cover;
+}
+.quart {
+  position: absolute;
+  top: 298px;
+  left: 30px;
+  font-size: var(--font-size-xl);
+  text-align: center;
+}
+.real-estate-card-inner {
+  position: absolute;
+  top: 0;
+  left: 70px;
+  border-radius: var(--br-8xs);
+  background-color: var(--color-white);
+  width: 187px;
+  height: 49px;
+}
+.real-estate {
+  position: absolute;
+  top: 16px;
+  left: 107px;
+  font-weight: 600;
+}
+.join-us-in {
+  position: absolute;
+  top: 326px;
+  left: 30px;
+  font-size: var(--font-size-xs);
+  font-family: var(--font-roboto-flex);
+  color: var(--color-darkslategray);
+  display: inline-block;
+  width: 267px;
+}
+.investment-opportunities1 {
+  position: relative;
+  font-weight: 600;
+}
+.button {
+  position: absolute;
+  top: 416px;
+  left: calc(50% - 133.5px);
+  background-color: var(--color-limegreen);
+  width: 240px;
+  height: 31px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: var(--padding-7xs) 0;
+  box-sizing: border-box;
+  color: var(--color-white);
+}
+.quart-logo-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.investors,
+.of-objective {
+  position: absolute;
+  top: 25px;
+  left: 77px;
+  font-weight: 500;
+}
+.of-objective {
+  top: 43px;
+}
+.green-line-child,
+.green-line-item {
+  position: absolute;
+  margin: 0 !important;
+  top: -4px;
+  left: -4px;
+  width: 187.03px;
+  height: 8px;
+  z-index: 0;
+}
+.green-line-item {
+  width: 109px;
+  z-index: 1;
+}
+.green-line {
+  position: absolute;
+  top: 71px;
+  left: 77px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs);
+  gap: var(--gap-3xs);
+}
+.box-01 {
+  position: absolute;
+  top: 189px;
+  left: 30px;
+  background-color: var(--color-white);
+  box-shadow: 0 4px 39px -1px rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--color-darkslateblue-200);
+  box-sizing: border-box;
+  width: 267px;
+  height: 90px;
+  font-size: var(--font-size-xs);
+}
+.real-estate-card {
+  position: absolute;
+  top: 265px;
+  left: 15%;
+  width: 327px;
+  height: 502px;
+  font-size: var(--font-size-mini);
+}
+.logistics-card-item {
+  position: absolute;
+  top: 18px;
+  left: 0;
+  border-radius: var(--br-8xs) var(--br-8xs) 0 0;
+  width: 327px;
+  height: 216px;
+  object-fit: cover;
+}
+.cocapital {
+  position: absolute;
+  top: 297px;
+  left: 29px;
+  font-size: var(--font-size-xl);
+  text-align: center;
+}
+.logistics-card-inner {
+  position: absolute;
+  top: 0;
+  left: 55px;
+  border-radius: var(--br-8xs);
+  background-color: var(--color-white);
+  width: 217px;
+  height: 59px;
+}
+.logistics {
+  position: absolute;
+  top: 19px;
+  left: 119px;
+  font-size: var(--font-size-base);
+}
+.join-us-in1 {
+  position: absolute;
+  top: 327px;
+  left: 31px;
+  font-family: var(--font-roboto-flex);
+  color: var(--color-darkslategray);
+  display: inline-block;
+  width: 266px;
+}
+.io,
+.location {
+  position: absolute;
+  left: 29px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  font-size: var(--font-size-mini);
+}
+.location {
+  top: 452px;
+  background-color: rgba(249, 90, 90, 0.83);
+  width: 163px;
+  height: 24px;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0 47px;
+  color: var(--color-gray-100);
+}
+.io {
+  top: 415px;
+  background-color: var(--color-limegreen);
+  width: 240px;
+  height: 31px;
+  align-items: center;
+  justify-content: flex-end;
+  padding: var(--padding-7xs) 0;
+  color: var(--color-white);
+}
+.investors1,
+.of-objective1 {
+  position: absolute;
+  top: 24px;
+  left: 76px;
+  font-weight: 500;
+}
+.of-objective1 {
+  top: 42px;
+  left: 77px;
+}
+.box-02,
+.group-icon {
+  position: absolute;
+  top: 66px;
+  left: 73px;
+  width: 187.03px;
+  height: 8px;
+}
+.box-02 {
+  top: 189px;
+  left: 29px;
+  background-color: var(--color-white);
+  box-shadow: 0 3px 32px rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--color-darkslateblue-200);
+  box-sizing: border-box;
+  width: 268px;
+  height: 90px;
+}
+.logistics-card {
+  position: absolute;
+  top: 265px;
+  left: 40%;
+  width: 327px;
+  height: 502px;
+}
+.islostake {
+  top: 295px;
+  font-size: var(--font-size-xl);
+  text-align: center;
+}
+.io1,
+.islostake,
+.join-us-in2 {
+  position: absolute;
+  left: 29px;
+}
+.join-us-in2 {
+  top: 324px;
+  font-family: var(--font-roboto-flex);
+  color: var(--color-darkslategray);
+  display: inline-block;
+  width: 262px;
+}
+.io1 {
+  top: 411px;
+  background-color: var(--color-limegreen);
+  width: 240px;
+  height: 31px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: var(--padding-7xs) 0;
+  box-sizing: border-box;
+  font-size: var(--font-size-mini);
+  color: var(--color-white);
+}
+.infrastructure {
+  position: absolute;
+  top: 19px;
+  left: 86px;
+  font-size: var(--font-size-base);
+}
+.box-03-child,
+.box-03-item {
+  position: absolute;
+  top: -26px;
+  left: -33px;
+  width: 334px;
+  height: 156px;
+}
+.box-03-item {
+  top: 0;
+  left: 6px;
+  width: 65px;
+  height: 90px;
+  object-fit: cover;
+}
+.box-03-inner {
+  position: absolute;
+  top: 67px;
+  left: 78px;
+  width: 179px;
+  height: 8px;
+}
+.of-objective2 {
+  position: absolute;
+  top: 43px;
+  left: 78px;
+  font-weight: 500;
+}
+.investors2 {
+  position: relative;
+  font-weight: 500;
+}
+.investors-wrapper {
+  position: absolute;
+  top: 25px;
+  left: 77px;
+  width: 179.03px;
+  height: 46px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.box-03 {
+  position: absolute;
+  top: 188px;
+  left: 29px;
+  width: 268px;
+  height: 90px;
+}
+.infrastructure-card {
+  position: absolute;
+  top: 265px;
+  left: 65%;
+  width: 327px;
+  height: 502px;
+}
+.investment-oppportunities {
+  position: absolute;
+  top: 4238px;
+  left: 0;
+  width: 100%;
+  height: 877px;
+  background-image: url(./public/investment-oppportunities@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  font-size: var(--font-size-xs);
+  color: var(--color-black);
+  font-family: var(--font-montserrat);
+  
+}
+/* CSS Animation Classes */
+.card {
+  opacity: 0;
+  transform: translateY(100px);
+  animation: fadeIn 2.5s ease forwards;
+}
+
+.card:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.card:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.card:nth-child(3) {
+  animation-delay: 2s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/*
+********** BENIFITS OF INVESTORS **********
+*/
+
+/* Liuidity */
+.liquidity-logo-child {
+  position: absolute;
+  width: 70.29%;
+  top: 10px;
+  right: 15.43%;
+  left: 14.29%;
+  max-width: 100%;
+  overflow: hidden;
+  height: 50px;
+  object-fit: cover;
+}
+.liquidity-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-darkslategray);
+  width: 70px;
+  height: 70px;
+}
+.liquidity1 {
+  position: absolute;
+  top: 20.5px;
+  left: 96.01px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 103.47px;
+}
+.investors-can-invest {
+  position: absolute;
+  top: 81px;
+  left: 0;
+  font-size: var(--font-size-sm);
+  line-height: 132.4%;
+  font-family: var(--font-roboto-flex);
+  color: var(--color-darkslateblue-300);
+  text-align: left;
+  display: inline-block;
+  width: 412px;
+  height: 114px;
+}
+.liquidity {
+  position: absolute;
+  top: 390px;
+  left: 15%;
+  width: 30%;
+  height: 20%;
+}
+/* Transperancy */
+.transparency-logo-child {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 49.2px;
+  height: 50px;
+  object-fit: cover;
+}
+.transparency1 {
+  position: absolute;
+  top: 20.5px;
+  left: 96px;
+}
+.investors-who-acquire {
+  position: absolute;
+  top: 89px;
+  left: 0;
+  font-size: var(--font-size-sm);
+  line-height: 132.4%;
+  font-family: var(--font-roboto-flex);
+  color: var(--color-darkslateblue-300);
+  text-align: left;
+  display: inline-block;
+  width: 421px;
+  height: 104px;
+}
+.transparency {
+  position: absolute;
+  top: 387px;
+  left: 60%;
+  width: 30%;
+  height: 20%;
+}
+/* Divercification */
+.divercification-logo-child {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  width: 49.2px;
+  height: 54.62px;
+  object-fit: cover;
+}
+.diversification1 {
+  position: absolute;
+  top: 22.39px;
+  left: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 183px;
+  height: 31.68px;
+}
+.our-platform-allow {
+  position: absolute;
+  top: 98.46px;
+  left: 0;
+  font-size: var(--font-size-sm);
+  line-height: 132.4%;
+  font-family: var(--font-roboto-flex);
+  color: var(--color-darkslateblue-300);
+  text-align: left;
+  display: inline-block;
+  width: 412px;
+  height: 114px;
+}
+.diversification {
+  position: absolute;
+  top: 662px;
+  left: 15%;
+  width: 30%;
+  height: 20%;
+  font-family: var(--font-montserrat);
+}
+/* Safety */
+.funds-are-held-in-escrow-until {
+  margin: 0;
+  padding-left: var(--padding-lgi);
+}
+.to-enhance-investor-container {
+  position: absolute;
+  top: 89px;
+  left: 0;
+  font-size: var(--font-size-sm);
+  line-height: 132.4%;
+  font-family: 'Roboto Flex';
+  color: var(--color-darkslateblue-300);
+  text-align: left;
+  display: inline-block;
+  width: 425px;
+  height: 124px;
+}
+.safety {
+  position: absolute;
+  top: 662px;
+  left: 0%;
+  left: 60%;
+  width: 30%;
+  height: 20%;
+  font-family: var(--font-montserrat);
+}
+.benefits-for-investors1 {
+  position: absolute;
+  top: 181px;
+  left: 29%;
+  font-size: var(--font-size-45xl);
+  color: var(--color-darkslategray);
+  text-align: left;
+}
+.benefits-for-investors-child {
+  position: absolute;
+  top: 425.5px;
+  left: 53%;
+  border-right: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 1px;
+  height: 410px;
+}
+.benefits-for-investors {
+  position: absolute;
+  top: 3157px;
+  left: 0;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 1081px;
+  text-align: center;
+  color: var(--color-orangered);
+}
+
+.benefits-for-investors > div {
+  perspective: 100px;
+  transition: transform 2.5s;
+}
+
+.benefits-for-investors > div {
+  transform-style: preserve-3d;
+  border-radius: 1px;
+  box-shadow: 1px 1px 0 1px #f9f9fb, -1px 0 10px 0 rgba(34, 33, 81, 0.01), 28px 28px 28px 0 rgba(34, 33, 81, 0.25);
+  transition: 2.5s ease-in-out transform, 2.5 ease-in-out box-shadow;
+  perspective: 1000px;
+}
+
+.benefits-for-investors > div.animated {
+  transform: translate3d(0px, -16px, 0px) rotateX(51deg) rotateZ(43deg);
+  box-shadow: 1px 1px 0 1px #f9f9fb, -1px 0 28px 0 rgba(34, 33, 81, 0.01), 54px 54px 28px -10px rgba(34, 33, 81, 0.15);
+}
+
+
+
+
+/*
+********** BENEFITS FOR INVESTMENT MANAGERS **********
+*/
+
+
+
+
+.benefits-for-investment {
+  position: absolute;
+  top: 163px;
+  left: calc(50% - 402.5px);
+  font-size: var(--font-size-29xl);
+  text-transform: capitalize;
+  color: var(--color-white);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  
+}
+.b4-icon {
+  width: 77px;
+  height: 77px;
+  object-fit: cover;
+}
+.b4-icon,
+.secure-channel {
+  position: relative;
+}
+.blockchain-is-an {
+  position: relative;
+  font-size: var(--font-size-mini);
+  font-family: var(--font-roboto-flex);
+  color: var(--color-white);
+  text-align: center;
+  display: inline-block;
+  width: 343px;
+}
+.card4 {
+  position: absolute;
+  top: 585px;
+  left: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-smi);
+  text-align: left;
+}
+.b3-icon {
+  position: relative;
+  width: 77px;
+  height: 86px;
+  object-fit: cover;
+}
+.rapid-and-cheap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 378px;
+  height: 26.81px;
+  flex-shrink: 0;
+}
+.less-paperwork-more {
+  position: relative;
+  font-size: var(--font-size-mini);
+  font-family: var(--font-roboto-flex);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+  width: 215px;
+  height: 20.1px;
+  flex-shrink: 0;
+}
+.card3 {
+  position: absolute;
+  top: 326px;
+  left: 50%;
+  height: 159px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-smi);
+}
+.more-investors-in {
+  position: relative;
+  font-size: var(--font-size-mini);
+  font-family: var(--font-roboto-flex);
+  color: var(--color-white);
+  display: inline-block;
+  width: 344px;
+}
+.card2,
+.low-investors-relation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card2 {
+  position: absolute;
+  top: 584px;
+  left: 33%;
+  flex-direction: column;
+  gap: var(--gap-smi);
+}
+.b1-icon{
+  position: relative;
+  width: 77px;
+  height: 86px;
+  object-fit: cover;
+}
+.low-investors-relation {
+  position: relative;
+  width: 379px;
+}
+.we-take-charge {
+  position: relative;
+  font-size: var(--font-size-mini);
+  font-family: var(--font-roboto-flex);
+  color: var(--color-white);
+  display: inline-block;
+  width: 317px;
+}
+.card1 {
+  position: absolute;
+  top: 326px;
+  left: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-smi);
+}
+.b,
+.benefits-for-investment-manage {
+  font-size: var(--font-size-xl);
+  text-align: center;
+}
+.benefits-for-investment-manage {
+  position: absolute;
+  top: 2296px;
+  left: 0;
+  background-color: var(--color-darkslategray);
+  width: 100%;
+  height: 861px;
+  color: var(--color-orangered);
+}
+.b {
+  position: relative;
+  font-family: var(--font-montserrat);
+  color: var(--color-white);
+}
+
+/* Initial positioning */
+.benefits-for-investment-manage {
+  position: relative;
+  overflow: hidden;
+}
+
+.card1,
+.card4 {
+  transform: translateX(100%); /* Initially hidden to the right */
+  transition: transform 2s;
+}
+
+.card2,
+.card3 {
+  transform: translateX(-100%); /* Initially hidden to the left */
+  transition: transform 2s;
+}
+
+.animate{
+  transform: translateX(0);
+}
+
+
+
+/* 
+********** HOW IT WORKS **********
+*/
+
+
+/* Define initial state for animated elements */
+[data-animate-on-scroll] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 1.5s ease;
+}
+
+/* Define animation when elements are in view */
+.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.button1 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-5xs) 9px;
+  background-color: var(--color-orangered);
+  position: absolute;
+  top: 0;
+  left: calc(50% - 15.5px);
+  border-radius: var(--br-8xs);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sourcing1 {
+  position: absolute;
+  top: 52px;
+  left: calc(50% - 60.5px);
+}
+.investment-managers-submit {
+  position: absolute;
+  top: 93px;
+  left: calc(50% - 490.5px);
+  font-size: var(--font-size-base);
+  line-height: 143.9%;
+  font-family: var(--font-roboto-flex);
+  display: inline-block;
+  width: 989px;
+}
+.sourcing {
+  position: absolute;
+  top: 205px;
+  left: 17.2%;
+  width: 989px;
+  height: 139px;
+}
+.button2 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-5xs) 7px;
+  background-color: var(--color-orangered);
+  position: absolute;
+  top: 0;
+  left: calc(50% - 16.5px);
+  border-radius: var(--br-8xs);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.a-timeframe-is,
+.fundraising1 {
+  position: absolute;
+  top: 53px;
+  left: calc(50% - 79.5px);
+}
+.a-timeframe-is {
+  top: 91px;
+  left: calc(50% - 482.5px);
+  font-size: var(--font-size-base);
+  line-height: 139.9%;
+  font-family: var(--font-roboto-flex);
+  display: inline-block;
+  width: 971px;
+}
+.fundraising {
+  position: absolute;
+  top: 414px;
+  left: 265px;
+  width: 971px;
+  height: 135px;
+}
+.button3 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-3xs) var(--padding-5xs);
+  background-color: var(--color-orangered);
+  position: absolute;
+  top: 0;
+  left: calc(50% - 15.5px);
+  border-radius: var(--br-8xs);
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.launch1 {
+  position: absolute;
+  top: 54px;
+  left: calc(50% - 47.5px);
+}
+.the-investment-manager {
+  position: absolute;
+  top: 83px;
+  left: calc(50% - 481.5px);
+  font-size: var(--font-size-base);
+  line-height: 149.9%;
+  font-family: var(--font-roboto-flex);
+  display: inline-block;
+  width: 971px;
+}
+.launch {
+  position: absolute;
+  top: 626px;
+  left: 265px;
+  width: 971px;
+  height: 131px;
+}
+.b3 {
+  top: 8px;
+  left: 6px;
+  font-size: var(--font-size-xl);
+  font-family: var(--font-montserrat);
+  color: var(--color-white);
+  text-align: center;
+}
+.b3,
+.button4,
+.exit1 {
+  position: absolute;
+}
+.button4 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-orangered);
+  top: 0;
+  left: calc(50% - 24.5px);
+  border-radius: var(--br-8xs);
+  width: 40px;
+  height: 40px;
+}
+.exit1 {
+  top: 49px;
+  left: calc(50% - 32.5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+}
+.wait-until-completion-of-the-p {
+  margin: 1px;
+  padding-left: 21px;
+}
+.choose-between-two-container {
+  position: absolute;
+  top: 71.12px;
+  left: calc(50% - 499.5px);
+  font-size: var(--font-size-base);
+  line-height: 154.9%;
+  font-family: 'Roboto flex';
+  display: inline-block;
+  width: 989px;
+}
+.exit {
+  position: absolute;
+  top: 827px;
+  left: 265px;
+  width: 989px;
+  height: 171.12px;
+}
+.line-icon {
+  position: absolute;
+  top: 356px;
+  left: 50%;
+  width: 2px;
+  height: 451px;
+}
+.how-it-works1 {
+  position: absolute;
+  top: 72px;
+  left: calc(50% - 207.5px);
+  font-size: var(--font-size-45xl);
+  text-transform: capitalize;
+  text-align: center;
+}
+.how-it-works {
+  position: absolute;
+  top: 1125px;
+  left: 0;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 1171px;
+  text-align: center;
+}
+
+
+
+/*
+********** HOME PAGE **********
+*/
+
+
+
+.home-bg-icon {
+  position: absolute;
+  height: 98.44%;
+  width: 100%;
+  top: 8.98%;
+  right: 0;
+  bottom: -7.42%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.browse-our-investment
+{
+  position: absolute;
+  left: 109px;
+  top: 35%;
+  font-size: 20px;
+  font-family: 'Roboto flex';
+  display: flex;
+  align-items: center;
+  width: 30%;
+  opacity: 0; /* Initially hidden */
+  transform: translateY(-20px); /* Initial position above the viewport */
+}
+
+.join-other-professional {
+  position: absolute;
+  left: 109px;
+  top: 26%;
+  display: flex;
+  align-items: center;
+  font-family: 'roboto flex';
+  width: 655.32px;
+  opacity: 0;
+  transform: translateY(-20px); 
+}
+
+.animated {
+  animation: slide-in 1.5s ease forwards;
+  opacity: 1;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.get-started {
+  position: relative;
+  font-size: var(--font-size-xl);
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: left;
+}
+
+.button-home-page {
+  cursor: pointer;
+  border: 0;
+  padding: 14px 27px;
+  background-color: var(--color-orangered);
+  position: absolute;
+  top: 495px;
+  left: 109px;
+  border-radius: 4px;
+  width: 219px;
+  height: 58px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.button-home-page:hover {
+  transform: scale(1.05); 
+  background-color: #FF5733; 
+}
+
+.button-home-page:active {
+  transform: scale(0.95); 
+  background-color: #FF4507;
+}
+
+.pc-icon {
+  position: absolute;
+  top: 25%;
+  left: 787px;
+  width: 550px;
+  height: 478px;
+  object-fit: cover;
+}
+.button-home-page.animated,
+.pc-icon.animated {
+  animation: slide-in 1.5s forwards;
+  top: 70%px; /* Final position after the animation */
+}
+.home-page,
+.nav-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1417px;
+}
+.home-page {
+  background-color: transparent;
+  height: 1125px;
+  overflow: hidden;
+  width: 100%;
+  font-size: var(--font-size-17xl);
+  color: var(--color-white);
+}
+
+/* CSS for the click animation */
+.click-animation {
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.click-animation:active {
+  transform: scale(0.95); /* Scales down the button on click */
+  background-color: #0078d4; /* Change the background color on click */
+}
+
+
+
+
+/* 
+********** NAVIGATION **********
+*/
+
+
+.nav-bg {
+  background-color: var(--color-white);
+  height: 100px;
+}
+.home {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  font-size: var(--font-size-5xl);
+  font-weight: 500;
+  font-family: var(--font-inter);
+  color: var(--color-darkslategray);
+  text-align: left;
+  display: inline-block;
+  width: 77px;
+  flex-shrink: 0;
+}
+.about {
+  width: 76.39px;
+  flex-shrink: 0;
+}
+.about,
+.benefits,
+.contact,
+.overview2 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  font-size: var(--font-size-5xl);
+  font-weight: 500;
+  font-family: var(--font-inter);
+  color: var(--color-darkslategray);
+  text-align: left;
+  display: inline-block;
+}
+.contact,
+.overview2 {
+  width: 123px;
+  flex-shrink: 0;
+}
+.contact {
+  width: 98px;
+}
+.navigation {
+  position: absolute;
+  top: 39px;
+  left: 559px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 45px;
+}
+.liquidstate1 {
+  position: absolute;
+  top: 30%;
+  left: 3%;
+  letter-spacing: 0.06em;
+}
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  font-size: var(--font-size-17xl);
+  color: var(--color-darkslateblue-100);
+}
+.desktop {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 8185px;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-darkslategray);
+  font-family: var(--font-inter);
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff; /* You can change this to the desired background color */
+  z-index: 1000; /* Ensure it's on top of other content */
+  /* Add any other styles you want for your navigation bar */
+}
+
+
+
+
+
+
+/*
+*********** RESPONSIVE FOR 768px **********
+*/
+
+
+
+
+/* Additional adjustments for 768px and above */
+@media only screen and (max-width: 768px) {
+  .social-media,
+  .email {
+    font-size: 25px;
+  }
+
+  .social-media {
+    left: 70%;
+    top: 140px; 
+    width: 200px;
+  }
+
+  .email {
+    top: 138px;
+    margin-left: 39%; 
+  }
+  .instagram {
+    left: 70%; 
+  }
+
+  .twitter {
+    left: 77%; 
+  }
+
+  .facebook {
+    left: 85%;
+  }
+  .instagram,
+  .twitter,
+  .facebook {
+    top: 200px;
+    height: 40px;
+    width: 40px; 
+  }
+
+  .armandkamgarhecedu-mmetral {
+    top: 200px; /* Adjust top position */
+    width: 500px; /* Adjust width */
+    margin-left: 39%;
+    font-size: medium;
+  }
+
+  .liquidstate {
+    margin-left: 1%;
+    top: 72px; /* Adjust top position */
+    font-size: var(--font-size-18xl); /* Adjust font size */
+  }
+
+  /*NUTSHELL*/
+
+  .frame {
+    top: 0;
+    left: 0;
+    background-color: var(--color-white);
+    height: 871px;
+  }
+  .liquidstate-in-a {
+    top: 30%;
+    font-size: 80%;
+    left: 55%;
+  }
+  .smaller-investment-tickets-container {
+    top: 45%;
+    left: 52%;
+    font-size: 16px;
+    width: 348px;
+  }
+
+  .nutshell-image-icon {
+    position: absolute;
+    top: 112px;
+    left: 0;
+    width: 361px;
+    height: 647px;
+    object-fit: cover;
+  }
+  
+  /* OVERVIEW */
+
+
+  .chart-image-icon {
+    width: 636px;
+    height: 238px;
+  }
+  .chart {
+    left: 7%;
+    width: 647px;
+    height: 365px;
+    padding: 53px 53px;
+  }
+
+  /* BLOCKCHAIN */
+
+  .blockchain1 {
+    left: 35%;
+    font-size: 50px;
+    width: 80%;
+  }
+  .the-technology-that {
+    top: 20%;
+    left: 13%;
+    font-size: 24px;
+    width: 75%;
+  }
+  .experience-the-future {
+    top: 25%;
+    left: 10%;
+    font-size: 20px;
+    width: 80%;
+  }
+  .at-liquidestate-we {
+    height: 20%;
+    width: 40%;
+    top: 45%;
+    left: 50%;
+    font-size: 16px;
+  }
+  .get-early-access {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .get-early-access-button {
+    width: 17.83%;
+    top: 61%;
+    right: 12.59%;
+    left: 70.58%;
+    height: 40px;
+  }
+  .learn-more {
+    font-size: 13px;
+  }
+  .learn-more-button {
+    width: 17.83%;
+    height: 25px;
+    top: 61%;
+    right: 32.6%;
+    left: 50.78%;
+  }
+  .bloackchain-logo-box {
+    width: 236px;
+    height: 229px;
+  }
+  .icon-container {
+    top: 45%;
+    left: 10%;
+  }
+ 
+
+/* INVESTMENT OPPORTUNITIES */
+
+  .investment-opportunities {
+  top: 94px;
+  font-size: 45px;
+  width: 80%;
+  left: 15%;
+  scroll-behavior: fixed;
+}
+
+.real-estate-card {
+  top: 265px;
+  left: 5%;
+}
+
+.logistics-card {
+  top: 265px;
+  left: 50%;
+}
+.infrastructure-card {
+  top: 265px;
+  left: 95%;
+}
+.investment-oppportunities {
+  flex-direction: row;
+  flex-direction: row;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+
+
+
+/*
+********** BENIFITS OF INVESTORS **********
+*/
+
+/* Liuidity */
+.investors-can-invest {
+  top: 89px;
+  left: 0;
+  font-size:14px;
+  width: 300px;
+  height: 114px;
+}
+.liquidity {
+  top: 390px;
+  left: 6%;
+}
+/* Transperancy */
+.investors-who-acquire {
+  top: 89px;
+  font-size: 14px;
+  width: 300px;
+  height: 114px;
+}
+.transparency {
+  top: 390px;
+  left: 57%;
+}
+/* Divercification */
+.our-platform-allow {
+  top: 89;
+  font-size: 14px;
+  width: 300px;
+  height: 114px;
+}
+.diversification {
+  top: 680px;
+  left: 6%;
+}
+/* Safety */
+.to-enhance-investor-container {
+  top: 89px;
+  font-size: 14px;
+  width: 300px;
+  height: 114px;
+}
+.safety {
+  top: 670px;
+  left: 57%;
+}
+.benefits-for-investors1 {
+  top: 190px;
+  left:15%;
+  font-size: 50px;
+}
+.benefits-for-investors-child {
+  top: 400.5px;
+  left: 50%;
+  height: 50%;
+}
+
+
+
+
+/*
+********** BENEFITS FOR INVESTMENT MANAGERS **********
+*/
+
+
+.benefits-for-investment {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  font-size: 35px;
+  
+}
+.b4-icon {
+  width: 55px;
+  height: 55px;
+}
+
+.blockchain-is-an {
+  font-size: 15px;
+  width: 300px;
+}
+.secure-channel{
+  width: 379px;
+  font-size: 15px;
+  text-align: center; 
+}
+.card4 {
+  top: 63%;
+  left: 50%
+}
+.b3-icon {
+  width: 55px;
+  height: 55px;
+}
+.rapid-and-cheap {
+  width: 379px;
+  font-size: 15px;
+}
+.less-paperwork-more {
+  font-size: 15px;
+  width: 317px;
+  text-align: center;  
+}
+.card3 {
+  top: 35%;
+  left: 50%
+}
+.new-pool-of{
+  width: 379px;
+  font-size: 15px;
+}
+.more-investors-in {
+  font-size: 15px;
+  width: 317px;
+}
+.b2-icon {
+  width: 55px;
+  height: 55px;
+}
+.card2 {
+  top: 63.5%;
+  left: 5%;
+}
+.low-investors-relation {
+  width: 379px;
+  font-size: 15px;
+}
+.we-take-charge {
+  font-size: 15px;
+  width: 317px;
+}
+.card1 {
+  top: 37%;
+  left: 5%;
+}
+.b1-icon {
+  width: 55px;
+  height: 55px;
+}
+
+
+
+/* 
+********** HOW IT WORKS **********
+*/
+
+
+.investment-managers-submit {
+  top: 90px;
+  left: 0%;
+  font-size: 15px ;
+  width: 600px;
+}
+.sourcing {
+  top: 205px;
+  left: 10.5%;
+  width: 600px;
+  height: 139px;
+}
+.a-timeframe-is {
+  top: 90px;
+  left: 0%;
+  font-size: 15px ;
+  width: 650px;
+}
+.fundraising {
+  top: 414px;
+  left: 10.5%;
+  width: 600px;
+}
+.launch1 {
+  position: absolute;
+  top: 54px;
+  left: calc(50% - 47.5px);
+}
+.the-investment-manager {
+  top: 90px;
+  left: -5%;
+  font-size: 15px ;
+  width: 700px;
+}
+.launch {
+  top: 626px;
+  left: 10.5%;
+  width: 600px;
+}
+.b3 {
+  top: 8px;
+  left: 10.5%;
+
+}
+.exit1 {
+  top: 49px;
+  left: -5.5%;
+  width: 600px;
+}
+.choose-between-two-container {
+  top: 90px;
+  left: -9%;
+  font-size: 15px ;
+  width: 650px;
+}
+.exit {
+  position: absolute;
+  top: 827px;
+  left: 18%;
+  width: 989px;
+  height: 171.12px;
+}
+.button4 {
+  left: 22.7%;
+}
+.how-it-works1 {
+  top: 72px;
+  left: 32%;
+  font-size: 45px;
+}
+
+
+
+/*
+********** HOME PAGE **********
+*/
+
+
+
+.home-bg-icon {
+  position: absolute;
+  height: 98.44%;
+  width: 100%;
+  top: 8.98%;
+  right: 0;
+  bottom: -7.42%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.browse-our-investment,
+.join-other-professional {
+  left: 80px;
+}
+.join-other-professional {
+  top: 25%;
+  font-size: 30px;
+  font-weight: 500;
+}
+.browse-our-investment {
+  top: 34%;
+  font-size: 16px;
+  width: 60%;
+}
+.get-started {
+  font-size: var(--font-size-xl);
+  font-weight: 500;
+}
+.button-home-page {
+  padding: 14px 27px;
+  top: 490px;
+  left: 80px;
+  width: 200px;
+  height: 50px;
+}
+.pc-icon {
+  top: 45%;
+  left: 45%;
+  width: 50%;
+  height: 30%;
+  object-fit: cover;
+}
+
+
+
+/* 
+********** NAVIGATION **********
+*/
+
+
+
+.home {
+  padding: 0;
+  left: 20%;
+}
+.about {
+ left: 30%;
+}
+.about,
+.benefits,
+.contact,
+.overview2,
+.blockchain,
+.home {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.home{
+  left: 26%;
+}
+
+.benefits{
+  left: 6%;
+}
+
+.blockchain{
+  left: 0%;
+}
+.about{
+  left: 53%;
+}
+.overview2{
+  left: 17%;
+}
+.contact {
+  left: 10%;
+}
+.navigation {
+  top: 35px;
+  left: 10%;
+  gap: 20px;
+}
+.liquidstate1 {
+  position: absolute;
+  font-size: 25px;
+  top: 30%;
+  left: 3%;
+  letter-spacing: 0.06em;
+}
+
+
+.desktop {
+  max-width: 100%;
+  max-height: 8185px;
+}
+  
+}

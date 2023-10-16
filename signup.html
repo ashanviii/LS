@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./signup.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto Flex:wght@400;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="signup">
+      <div class="sign-up">
+        <div class="signup1">Signup</div>
+        <input class="enter-email" placeholder="Enter email" type="text" />
+
+        <input
+          class="enter-password"
+          placeholder="Enter password"
+          type="password"
+        />
+
+        <input
+          class="confirm-password"
+          placeholder="Confirm Password"
+          type="password"
+        />
+
+        <button class="signup-button" autofocus="{true}" id="signupButton">
+          <div class="signup2">Signup</div>
+        </button>
+        <button class="already-have-an-container" id="alreadyHaveAn">
+          <span class="already-have-an">Already have an account?</span>
+          <span class="login"> Login</span>
+        </button>
+        <div class="or">or</div>
+        <button class="connect-with-google">
+          <img
+            class="connect-with-google-child"
+            alt=""
+            src="./public/rectangle-15@2x.png"
+          />
+
+          <div class="login-with-google">Login with google</div>
+        </button>
+      </div>
+      <button class="arrow" id="arrow"></button>
+    </div>
+
+    <script>
+      var signupButton = document.getElementById("signupButton");
+      if (signupButton) {
+        signupButton.addEventListener("click", function (e) {
+          window.location.href = "./done.html";
+        });
+      }
+      
+      var alreadyHaveAn = document.getElementById("alreadyHaveAn");
+      if (alreadyHaveAn) {
+        alreadyHaveAn.addEventListener("click", function (e) {
+          window.location.href = "./login.html";
+        });
+      }
+      
+      var arrow = document.getElementById("arrow");
+      if (arrow) {
+        arrow.addEventListener("click", function (e) {
+          window.location.href = "./index.html";
+        });
+      }
+      </script>
+  </body>
+</html>

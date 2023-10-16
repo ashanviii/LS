@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./done.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto Flex:wght@400;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="done" id="doneContainer1">
+      <div class="done1">
+        <img class="done-child" alt="" src="./public/group-105.svg" />
+
+        <div class="done2">Done</div>
+      </div>
+    </div>
+
+    <script>
+      var doneContainer1 = document.getElementById("doneContainer1");
+      if (doneContainer1) {
+        doneContainer1.addEventListener("click", function (e) {
+          window.location.href = "./index.html";
+        });
+      }
+      </script>
+  </body>
+</html>

@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto Flex:wght@400;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="desktop">
+
+      <!--
+      ********** CONTACTS **********
+      -->
+
+      <div class="contacts" data-scroll-to="contactsContainer">
+        <div class="social-media">Social Media</div>
+        <div class="email">Email</div>
+        <img
+          class="instagram"
+          id="instagram"
+          alt=""
+          src="./public/rectangle-19@2x.png"
+        />
+
+        <img
+          class="facebook"
+          id="facebook"
+          alt=""
+          src="./public/rectangle-17@2x.png"
+        />
+
+        <img
+          class="twitter"
+          id="twitter"
+          alt=""
+          src="./public/rectangle-18@2x.png"
+        />
+
+        <div class="armandkamgarhecedu-mmetral">
+          <ul class="smaller-investment-tickets-tha">
+            <li class="armandkamgarhecedu">
+              <a
+                class="armandkamgarhecedu1"
+                href="mailto:armand.kamgar@hec.edu"
+                target="_blank"
+                >armand.kamgar@hec.edu</a
+              >
+            </li>
+            <li>
+              <a
+                class="mmetralieu2018alumnieduie"
+                href="mailto:mmetral.ieu2018@alumni.edu.ie"
+                target="_blank"
+                >mmetral.ieu2018@alumni.edu.ie</a
+              >
+            </li>
+          </ul>
+        </div>
+        <b class="liquidstate">LIQUIDSTATE</b>
+      </div>
+
+
+      <!-- 
+            ********** IN A NUTSHELL **********
+          -->
+
+
+      <div class="nutshell">
+        <div class="frame"></div>
+        <b class="liquidstate-in-a">Liquidstate In A Nutshell</b>
+        <div class="smaller-investment-tickets-container">
+          <ul class="smaller-investment-tickets-tha">
+            <li class="smaller-investment-tickets">
+              Smaller investment tickets thanks to larger consensus in each club
+              deal
+            </li>
+            <li class="smaller-investment-tickets">
+              Faster entry to deals with easier due diligence and compressed
+              fundraising timelapses
+            </li>
+            <li>
+              Adaptation to your risk aversion level by investing in the
+              secondary market offering risk-mitigated ongoing projects
+            </li>
+          </ul>
+        </div>
+        <img
+          class="nutshell-image-icon"
+          alt=""
+          src="./public/nutshell-image@2x.png"
+        />
+      </div>
+
+    <script>
+      const section = document.querySelectorAll('.nutshell');
+const itemsToAnimate = document.querySelectorAll('.nutshell-image-icon, .smaller-investment-tickets-container, .liquidstate-in-a');
+let animationTriggered = false;
+
+function checkAnimation() {
+  if (!animationTriggered) {
+    const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+    sections.forEach(section => {
+      const rect = section.getBoundingClientRect();
+      if (rect.top >= 0 && rect.top <= viewportHeight) {
+        itemsToAnimate.forEach(item => {
+          item.style.animationPlayState = 'running';
+        });
+        animationTriggered = true;
+      }
+    });
+  }
+}
+
+window.addEventListener('scroll', checkAnimation);
+checkAnimation();
+
+</script>
+
+
+
+
+
+
+
+    </script>
+      <!-- 
+        ********** OVERVIEW **********
+      -->
+      <div class="overview" data-scroll-to="overviewContainer">
+        <b class="overview-of-real-container">
+          <p class="of-real-estate">Overview</p>
+          <p class="of-real-estate">of Real Estate Investment Profiles</p>
+        </b>
+        <div class="chart">
+          <img
+            class="chart-image-icon"
+            alt=""
+            src="./public/chart-image@2x.png"
+          />
+        </div>
+      </div>
+
+      <script>
+        // Function to handle the animations for a specific section
+function handleAnimations(entries, observer) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      // Identify the section for which this observer was triggered
+      const section = entry.target;
+
+      // Apply fade-in animations for the specific section
+      const chart = section.querySelector(".chart");
+      const title = section.querySelector(".of-real-estate");
+
+      const fadeIn = (element) => {
+        let opacity = 0;
+        const duration = 500; // Animation duration in milliseconds
+
+        const animation = () => {
+          element.style.opacity = opacity;
+          opacity += 1 / (duration / 16); // Adjust the increment for smoother animation
+          if (opacity < 1) {
+            requestAnimationFrame(animation);
+          }
+        };
+
+        animation();
+      };
+
+      fadeIn(chart);
+      fadeIn(title);
+
+      // Unobserve the section to avoid triggering the animations again
+      observer.unobserve(section);
+    }
+  });
+}
+
+// Define the sections you want to observe
+const sections = document.querySelectorAll(".overview");
+
+// Create an Intersection Observer for each section
+sections.forEach((section) => {
+  const observer = new IntersectionObserver(handleAnimations, { threshold: 0.5 });
+  observer.observe(section);
+});
+
+      </script>
+
+
+
+      <!-- 
+            ********** BLOCKCHAIN **********
+          -->
+
+
+
+      <div class="blockchain" data-scroll-to="blockchainContainer">
+        <div class="blockchain-logo slide-in"></div>
+        <b class="blockchain1 slide-in">Blockchain</b>
+        <div class="the-technology-that slide-in">
+          The Technology That Makes Everything Possible
+        </div>
+        <div class="experience-the-future">
+          Experience the future of investment with LiquidState – where security,
+          liquidity and efficiency meet seamlessly through blockchain technology
+        </div>
+        <div class="at-liquidestate-we">
+          At LiquidEstate, we believe in the power of blockchain technology to
+          transform the way investments are managed
+        </div>
+        <button class="get-early-access-button" id="getEarlyAccessButton">
+          <div class="get-early-access">Get early access</div>
+        </button>
+        <button class="learn-more-button" id="learnMoreButton">
+          <div class="learn-more">Learn More</div>
+        </button>
+        <div class="icon-container">
+          <div class="bloackchain-logo-box"></div>
+          <img
+            class="blockchain-1-icon"
+            alt=""
+            src="./public/blockchain-1@2x.png"
+          />
+        </div>
+      </div>
+     <!-- Include jQuery library -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Add a script to toggle the hover effect on click -->
+<script>
+$(document).ready(function() {
+  $("#getEarlyAccessButton").click(function() {
+    // Toggle the CSS class for the button on click
+    $(this).toggleClass("button-hover-effect");
+  });
+});
+
+// Function to check if the element is in the viewport
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.left >= 0 &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+// Function to handle scrolling and trigger the animation
+function checkScroll() {
+    const blockchainSection = document.querySelector('.blockchain');
+    const textElement = document.querySelector('.slide-in-right');
+
+    if (isElementInViewport(blockchainSection)) {
+        blockchainSection.classList.add('in-view');
+        textElement.classList.add('in-view');
+        window.removeEventListener('scroll', checkScroll);
+    }
+}
+
+</script>
+
+
+      <!-- 
+            ********** INVESTMENT OPPORTUNITIESs **********
+          -->
+
+
+
+      <div class="investment-oppportunities">
+        <b class="investment-opportunities">Investment Opportunities</b>
+        <div class="real-estate-card card" data-scrollmagic>
+          <div class="scrollable-content"></div>
+          <div class="real-estate-card-child"></div>
+          <img
+            class="real-estate-card-item"
+            alt=""
+            src="./public/rectangle-45@2x.png"
+          />
+
+          <b class="quart">Quart</b>
+          <div class="real-estate-card-inner"></div>
+          <div class="real-estate">REAL ESTATE</div>
+          <div class="join-us-in">
+            Join us in this exciting opportunity to participate in the real
+            estate sector's growth potential. Our commitment to delivering value
+            and returns remains unwavering. Invest today and be part of the
+            future of Real state.
+          </div>
+          <div class="button">
+            <div class="investment-opportunities1">
+              Investment Opportunities
+            </div>
+          </div>
+          <div class="box-01">
+            <img
+              class="quart-logo-icon"
+              alt=""
+              src="./public/quart-logo@2x.png"
+            />
+
+            <div class="investors">129 Investors</div>
+            <div class="of-objective">87% of Objective</div>
+            <div class="green-line">
+              <img class="green-line-child" alt="" src="./public/line-22.svg" />
+
+              <img class="green-line-item" alt="" src="./public/line-23.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="logistics-card card" data-scrollmagic>
+          <div class="real-estate-card-child"></div>
+          <img
+            class="logistics-card-item"
+            alt=""
+            src="./public/rectangle-54@2x.png"
+          />
+
+          <b class="cocapital">CoCapital</b>
+            <img class="box-03" alt="" src="./public/line-25.svg" />
+          <div class="logistics-card-inner"></div>
+          <b class="logistics">LOGISTICS</b>
+          <div class="join-us-in1">
+            Join us in this exciting opportunity to participate in the logistics
+            sector's growth potential. Our commitment to delivering value and
+            returns remains unwavering. Invest today and be part of the future
+            of logistics.
+          </div>
+          <div class="location">
+            <div class="investment-opportunities1">Location</div>
+          </div>
+          <div class="io">
+            <div class="investment-opportunities1">
+              Investment Opportunities
+            </div>
+          </div>
+          <div class="box-02">
+            <div class="investors1">107 Investors</div>
+            <div class="of-objective1">51% of Objective</div>
+            <img class="group-icon" alt="" src="./public/group.svg" />
+
+            <img
+              class="quart-logo-icon"
+              alt=""
+              src="./public/coc-logo@2x.png"
+            />
+          </div>
+        </div>
+        <div class="infrastructure-card card" data-scrollmagic>
+          <div class="real-estate-card-child"></div>
+          <img
+            class="real-estate-card-item"
+            alt=""
+            src="./public/rectangle-87@2x.png"
+          />
+
+          <b class="islostake">Islostake</b>
+          <div class="join-us-in2">
+            Join us in this exciting opportunity to participate in the logistics
+            sector's growth potential. Our commitment to delivering value and
+            returns remains unwavering. Invest today and be part of the future
+            of infrastructure.
+          </div>
+          <div class="io1">
+            <div class="investment-opportunities1">
+              Investment Opportunities
+            </div>
+          </div>
+          <div class="logistics-card-inner"></div>
+          <b class="infrastructure">INFRASTRUCTURE</b>
+          <div class="box-03">
+            <img class="box-03-child" alt="" src="./public/rectangle-72.svg" />
+
+            <img
+              class="box-03-item"
+              alt=""
+              src="./public/rectangle-86@2x.png"
+            />
+
+            <img class="box-03-inner" alt="" src="./public/line-25.svg" />
+            <div class="of-objective2">100% of Objective</div>
+            <div class="investors-wrapper">
+              <div class="investors2">245 Investors</div>
+            </div>
+          </div>
+        </div>
+      </div>
+     <script>
+// Select all card elements
+const card = document.querySelectorAll('.investment-oppportunities > div');
+
+// Create an Intersection Observer
+const observeru = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('card-visible');
+      observer.unobserve(entry.target);
+    }
+  });
+});
+
+// Observe each card
+cards.forEach((card) => {
+  observer.observe(card);
+});
+
+
+     </script>
+
+
+
+
+      <!-- 
+            ********** BENEFITS FOR INVESTORS **********
+          -->  
+
+
+
+
+      <div class="benefits-for-investors">
+        <div class="liquidity">
+          <div class="liquidity-logo">
+            <img
+              class="liquidity-logo-child"
+              alt=""
+              src="./public/rectangle-124@2x.png"
+            />
+          </div>
+          <b class="liquidity1">Liquidity</b>
+          <div class="investors-can-invest">
+            Investors can invest by simply purchasing a token which represents a
+            stake in the equity of a given project. The token is immediately
+            transferred to their secured wallet and can be traded at any time on
+            secondary market, after the anti-speculation period is over,
+            allowing increased liquidity, something unprecedented in the real
+            estate investment sector.
+          </div>
+        </div>
+        <div class="transparency">
+          <div class="liquidity-logo">
+            <img
+              class="transparency-logo-child"
+              alt=""
+              src="./public/rectangle-108@2x.png"
+            />
+          </div>
+          <b class="transparency1">Transparency</b>
+          <div class="investors-who-acquire">
+            Investors who acquire project tokens become part of the project's
+            tracking channel, receiving regular updates via a user-friendly
+            smartphone app. Quarterly in-person site visits are also offered to
+            preserve the tangible aspect of investments.
+          </div>
+        </div>
+        <div class="diversification">
+          <div class="liquidity-logo">
+            <img
+              class="divercification-logo-child"
+              alt=""
+              src="./public/rectangle-107@2x.png"
+            />
+          </div>
+          <b class="diversification1">Diversification</b>
+          <div class="our-platform-allow">
+            Our platform allow investors to browse through our bespoke of
+            alternative investment propositions and pick those in which they
+            believe, and most importantly those which fit their risk-return
+            profile.
+          </div>
+        </div>
+        <div class="safety">
+          <div class="liquidity-logo">
+            <img
+              class="transparency-logo-child"
+              alt=""
+              src="./public/rectangle-7@2x.png"
+            />
+          </div>
+          <b class="transparency1">Safety</b>
+          <div class="to-enhance-investor-container">
+            <p class="of-real-estate">To enhance investor confidence:</p>
+            <ul class="funds-are-held-in-escrow-until">
+              <li class="armandkamgarhecedu">
+                Funds are held in escrow until the fundraising target is met,
+                with instant equity refunds if not.
+              </li>
+              <li class="armandkamgarhecedu">
+                Developers are rigorously vetted for their track record.
+              </li>
+              <li>
+                After the project ends, a smart contract automatically
+                distributes funds recovered by the SPV to investors and destroys
+                tokens.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <b class="benefits-for-investors1">Benefits For Investors</b>
+        <div class="benefits-for-investors-child"></div>
+      </div>
+      <script>
+const cards = document.querySelectorAll(".benefits-for-investors > div");
+
+function animateCardOnHover(card) {
+  card.addEventListener("mouseenter", () => {
+    card.style.transform = "translate3d(0px, -16px, 0px) rotateX(51deg) rotateZ(43deg)";
+    card.style.boxShadow = "1px 1px 0 1px #f9f9fb, -1px 0 28px 0 rgba(34, 33, 81, 0.01), 54px 54px 28px -10px rgba(34, 33, 81, 0.15)";
+  });
+
+  card.addEventListener("mouseleave", () => {
+    card.style.transform = "";
+    card.style.boxShadow = "";
+  });
+}
+
+function handleScroll() {
+  cards.forEach((card) => {
+    const rect = card.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    if (rect.top < windowHeight && rect.bottom >= 0) {
+      if (!card.classList.contains("animated")) {
+        card.classList.add("animated");
+      }
+    } else {
+      card.classList.remove("animated");
+    }
+  });
+}
+
+cards.forEach(animateCardOnHover);
+window.addEventListener("scroll", handleScroll);
+      </script>
+
+
+
+      <!-- 
+            ********** BENEFITS FOR INVESTMENT MANAGERS **********
+          -->
+
+
+
+      <div
+        class="benefits-for-investment-manage"
+        data-scroll-to="benefitsForInvestmentManage"
+      >
+        <b class="benefits-for-investment">Benefits for investment managers</b>
+        <div class="card4">
+          <img class="b4-icon" alt="" src="./public/b4@2x.png" />
+
+          <b class="secure-channel">Secure channel</b>
+          <div class="blockchain-is-an">
+            Blockchain is an immutable technology making this process safe and
+            reliable
+          </div>
+        </div>
+        <div class="card3">
+          <img class="b3-icon" alt="" src="./public/b3@2x.png" />
+
+          <b class="rapid-and-cheap">Rapid and cheap fundraising process</b>
+          <div class="less-paperwork-more">Less paperwork, more efficiency</div>
+        </div>
+        <div class="card2">
+          <img class="b4-icon" alt="" src="./public/b31@2x.png" />
+
+          <b class="new-pool-of">New pool of investors</b>
+          <div class="more-investors-in">
+            More investors in each consortium, smaller entry tickets, new
+            investors unlocked
+          </div>
+        </div>
+        <div class="card1">
+          <img class="b1-icon" alt="" src="./public/b1@2x.png" />
+
+          <b class="low-investors-relation"
+            >Low investors’ relation management</b
+          >
+          <div class="we-take-charge">
+            We take charge of investor onboarding (including AML/KYC or KYB)
+          </div>
+        </div>
+      </div>
+      <script>
+        // Add an event listener for the scroll event
+document.addEventListener("scroll", handleScroll);
+
+function handleScroll() {
+  const benefitsSection = document.querySelector(".benefits-for-investment-manage");
+  const cards = benefitsSection.querySelectorAll(".card1, .card2, .card3, .card4");
+  
+  // Calculate the position of the benefits section relative to the viewport
+  const benefitsRect = benefitsSection.getBoundingClientRect();
+  
+  // When the benefits section is in the viewport, slide in the cards
+  if (benefitsRect.top <= window.innerHeight && benefitsRect.bottom >= 0) {
+    cards.forEach((card, index) => {
+      // Cards on the left slide in from the left, and cards on the right slide in from the right
+      if (index % 2 === 0) {
+        card.style.transform = "translateX(0)";
+      } else {
+        card.style.transform = "translateX(0)";
+      }
+    });
+  } else {
+    // Reset the cards to their initial hidden positions
+    cards.forEach((card, index) => {
+      if (index % 2 === 0) {
+        card.style.transform = "translateX(100%)";
+      } else {
+        card.style.transform = "translateX(-100%)";
+      }
+    });
+  }
+}
+
+      </script>
+
+
+
+      <!-- 
+            ********** HOW IT WORKS  **********
+          -->
+
+
+
+      <div class="how-it-works" data-scroll-to="howItWorks">
+        <div class="sourcing" data-animate-on-scroll>
+          <button class="button1">
+            <b class="b">01</b>
+          </button>
+          <b class="sourcing1">SOURCING</b>
+          <div class="investment-managers-submit">
+            Investment managers submit their investment projects and after
+            thorough due diligence we make it possible for you to become their
+            limited partner
+          </div>
+        </div>
+        <div class="fundraising" data-animate-on-scroll>
+          <button class="button2">
+            <b class="b">02</b>
+          </button>
+          <b class="fundraising1">FUNDRAISING</b>
+          <div class="a-timeframe-is">
+            A timeframe is set to collect the targeted amount of equity - until
+            the goal is reached, your money stays in an escrow and will be sent
+            back to your account if the fundraising is not conclusive.
+          </div>
+        </div>
+        <div class="launch" data-animate-on-scroll>
+          <button class="button3">
+            <b class="b">03</b>
+          </button>
+          <b class="launch1">LAUNCH</b>
+          <div class="the-investment-manager">
+            The investment manager collects its equity, raises debt from banks
+            and kicks off his development project. You will receive regular
+            updates on your dashboard and you will be able to regularly visit
+            the asset
+          </div>
+        </div>
+        <div class="exit" data-animate-on-scroll>
+          <button class="button4">
+            <b class="b3">04</b>
+          </button>
+          <b class="exit1">EXIT</b>
+          <div class="choose-between-two-container">
+            <p class="of-real-estate">Choose between two options:</p>
+            <ul class="wait-until-completion-of-the-p">
+                1. Wait until completion of the project and get your stake of the
+                profits - which will be automatically sent to your account
+                through the smart contract integrated on the blockchain
+              <ul>
+                2. Choose to cash out earlier through the secondary exchange market
+                by reselling your stake in project
+              </ul>
+            </ul>
+          </div>
+        </div>
+        <img class="line-icon" alt="" src="./public/line.svg" />
+
+        <b class="how-it-works1" data-animate-on-scroll>How It Works</b>
+      </div>
+      <script>
+ 
+ const sectionsToAnimate = document.querySelectorAll("[data-animate-on-scroll]");
+
+const observerhow = new IntersectionObserver(
+  (entries, obs) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        obs.unobserve(entry.target);
+
+        // Animate the next section
+        const nextIndex = [...sectionsToAnimate].indexOf(entry.target) + 1;
+        if (sectionsToAnimate[nextIndex]) {
+          setTimeout(() => {
+            sectionsToAnimate[nextIndex].classList.add("show");
+          }, 1000); // Adjust the delay (1s) as needed
+        }
+      }
+    });
+  },
+  { threshold: 0.5 }
+);
+
+sectionsToAnimate.forEach((section) => {
+  observer.observe(section);
+});
+
+
+      </script>
+
+
+
+      <!-- 
+            ********** HOME PAGE **********
+          -->
+
+
+
+      <div class="home-page" data-scroll-to="homePageContainer">
+        <img class="home-bg-icon" alt="" src="./public/desktop--1-1@2x.png" />
+
+        <div class="join-other-professional animated" id="joinInvestment">
+          Join other professional investors and unlock the power of Club Deals
+        </div>
+        <div class="browse-our-investment animated" id="browseInvestment">
+          Browse our investment opportunities and invest as a limited partner with one click
+        </div>
+        <button class="button-home-page click-animation" id="buttonHomePage">
+          <div class="get-started">Get Started</div>
+        </button>        
+        <img class="pc-icon animated" alt="" src="./public/pcicon@2x.png" />
+      </div>
+
+
+
+
+      <!--
+           ********** NAV **********
+      -->
+
+
+
+      <div class="navbar">
+        <div class="nav-bg"></div>
+        <div class="navigation">
+          <button class="home" id="home">Home</button>
+          <button class="about" id="about">About</button>
+          <button class="benefits" id="benefits">Benefits</button>
+          <button class="benefits" id="blockchain">Blockchain</button>
+          <button class="overview2" id="overview">Overview</button>
+          <button class="contact" id="contact">Contact</button>
+        </div>
+        <b class="liquidstate1">LIQUIDSTATE</b>
+      </div>
+    </div>
+
+  
+
+
+
+    <script>
+      var rectangleImage = document.getElementById("instagram");
+      if (rectangleImage) {
+        rectangleImage.addEventListener("click", function () {
+          window.open("https://www.instagram.com/");
+        });
+      }
+      
+      var rectangleImage1 = document.getElementById("facebook");
+      if (rectangleImage1) {
+        rectangleImage1.addEventListener("click", function () {
+          window.open("https://www.facebook.com/");
+        });
+      }
+      
+      var getEarlyAccessButton = document.getElementById("getEarlyAccessButton");
+      if (getEarlyAccessButton) {
+        getEarlyAccessButton.addEventListener("click", function (e) {
+          window.location.href = "./signup.html";
+        });
+      }
+      
+      var learnMoreButton = document.getElementById("learnMoreButton");
+      if (learnMoreButton) {
+        learnMoreButton.addEventListener("click", function (e) {
+          window.location.href = "./learn-more-page.html";
+        });
+      }
+      
+      var buttonHomePage = document.getElementById("buttonHomePage");
+      if (buttonHomePage) {
+        buttonHomePage.addEventListener("click", function (e) {
+          window.location.href = "./signup.html";
+        });
+      }
+      
+      var home = document.getElementById("home");
+      if (home) {
+        home.addEventListener("click", function () {
+          var anchor = document.querySelector("[data-scroll-to='homePageContainer']");
+          if (anchor) {
+            anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+          }
+        });
+      }
+      
+      var about = document.getElementById("about");
+      if (about) {
+        about.addEventListener("click", function () {
+          var anchor = document.querySelector("[data-scroll-to='howItWorks']");
+          if (anchor) {
+            anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+          }
+        });
+      }
+      
+      var benefits = document.getElementById("benefits");
+      if (benefits) {
+        benefits.addEventListener("click", function () {
+          var anchor = document.querySelector(
+            "[data-scroll-to='benefitsForInvestmentManage']"
+          );
+          if (anchor) {
+            anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+          }
+        });
+      }
+      
+      var blockchain = document.getElementById("blockchain");
+      if (blockchain) {
+        blockchain.addEventListener("click", function () {
+          var anchor = document.querySelector(
+            "[data-scroll-to='blockchainContainer']"
+          );
+          if (anchor) {
+            anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+          }
+        });
+      }
+      
+      var overview = document.getElementById("overview");
+      if (overview) {
+        overview.addEventListener("click", function () {
+          var anchor = document.querySelector("[data-scroll-to='overviewContainer']");
+          if (anchor) {
+            anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+          }
+        });
+      }
+      
+      var contact = document.getElementById("contact");
+      if (contact) {
+        contact.addEventListener("click", function () {
+          var anchor = document.querySelector("[data-scroll-to='contactsContainer']");
+          if (anchor) {
+            anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+          }
+        });
+      }
+      
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+      
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+    </script>
+  </body>
+</html>

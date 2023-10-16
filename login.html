@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./login.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto Flex:wght@400;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="login1">
+      <div class="login2">
+        <div class="login3">Login</div>
+        <input
+          class="enter-email1"
+          name="Email"
+          placeholder="Enter email"
+          type="email"
+        />
+
+        <input
+          class="enter-email1"
+          placeholder="Enter password"
+          type="password"
+        />
+
+        <button class="login-button" autofocus="{true}" id="loginButton">
+          <div class="login4">Login</div>
+        </button>
+        <button class="dont-have-an-container" id="dontHaveAn">
+          <span class="dont-have-an">Don’t have an account?</span>
+          <span class="signup3"> Signup</span>
+        </button>
+        <div class="or1">or</div>
+        <button class="connect-with-google1" autofocus="{true}">
+          <img
+            class="connect-with-google-item"
+            alt=""
+            src="./public/rectangle-151@2x.png"
+          />
+
+          <div class="login-with-google1">Login with google</div>
+        </button>
+      </div>
+      <button class="arrow1" id="arrow"></button>
+    </div>
+
+    <script>
+      var loginButton = document.getElementById("loginButton");
+      if (loginButton) {
+        loginButton.addEventListener("click", function (e) {
+          window.location.href = "./done.html";
+        });
+      }
+      
+      var dontHaveAn = document.getElementById("dontHaveAn");
+      if (dontHaveAn) {
+        dontHaveAn.addEventListener("click", function (e) {
+          window.location.href = "./signup.html";
+        });
+      }
+      
+      var arrow = document.getElementById("arrow");
+      if (arrow) {
+        arrow.addEventListener("click", function (e) {
+          window.location.href = "./desktop.html";
+        });
+      }
+      </script>
+  </body>
+</html>
