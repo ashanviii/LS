@@ -120,10 +120,6 @@
   display: inline-block;
   width: 588px;
 }
-.smaller-investment-tickets-container:hover {
-  animation: 1s ease 0s 1 normal none fade-in;
-  opacity: 1;
-}
 .nutshell-image-icon {
   position: absolute;
   top: 112px;
