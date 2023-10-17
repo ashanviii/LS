@@ -39,8 +39,8 @@
 }
 .done1 {
   position: absolute;
-  top: calc(50% - 344px);
-  left: calc(50% - 293px);
+  top: calc(37% - 350px);
+  left: calc(50% - 283px);
   border-radius: var(--br-2xl);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
   width: 566px;

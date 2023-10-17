@@ -1,21 +1,31 @@
-@keyframes swing-in-top-fws {
-  0% {
-    transform: rotate(0deg);
-    transform-origin: 50%0;
-  }
-  to {
-    transform: rotate(90deg);
-    transform-origin: 50%0;
-  }
-}
-.card-04-child {
+
+.card-04 {
   position: absolute;
   top: 0;
   left: 0;
   background-color: var(--color-darkslategray);
-  box-shadow: 6px 4px 11px rgba(0, 0, 0, 0.11);
   width: 389px;
   height: 267px;
+  border-radius: 0px 30px 30px 30px; 
+}
+.card-03 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-darkslategray);
+  width: 389px;
+  height: 267px;
+  border-radius: 30px 30px 0px 30px;
+}
+.card-02 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-darkslategray);
+  width: 389px;
+  height: 267px;
+  border-radius: 0px 30px 30px 30px;
+  
 }
 .full-traceability {
   position: absolute;
@@ -38,14 +48,36 @@
 .card-01-child,
 .card-04 {
   position: absolute;
-  top: 518px;
-  left: 526px;
+  top: 480px;
+  left: 54%;
   width: 389px;
   height: 267px;
 }
 .card-01-child {
   top: 0;
   left: 0;
+  border-radius: 30px 30px 0px 30px;
+  background-color: var(--color-darkslategray);
+  box-shadow: 5px 4px 18px rgba(0, 0, 0, 0.11);
+}
+.card-02-child {
+  top: 0;
+  left: 0;
+  border-radius: 30px 30px 0px 30px;
+  background-color: var(--color-darkslategray);
+  box-shadow: 5px 4px 18px rgba(0, 0, 0, 0.11);
+}
+.card-03-child {
+  top: 0;
+  left: 0;
+  border-radius: 30px 30px 0px 30px;
+  background-color: var(--color-darkslategray);
+  box-shadow: 5px 4px 18px rgba(0, 0, 0, 0.11);
+}
+.card-04-child {
+  top: 0;
+  left: 0;
+  border-radius: 30px 30px 0px 30px;
   background-color: var(--color-darkslategray);
   box-shadow: 5px 4px 18px rgba(0, 0, 0, 0.11);
 }
@@ -65,11 +97,12 @@
 }
 .card-01 {
   position: absolute;
-  top: 212px;
-  left: 83px;
+  top: 180px;
+  left: 20%;
   width: 389px;
   height: 267px;
   font-family: var(--font-roboto-flex);
+  
 }
 .lower-the-liquidity {
   position: absolute;
@@ -93,10 +126,11 @@
 }
 .card-02 {
   position: absolute;
-  top: 212px;
-  left: 526px;
+  top: 180px;
+  left: 54%;
   width: 389px;
   height: 267px;
+  border-radius: 0px 30px 30px 30px;
 }
 .we-safeguard-your,
 .your-investments-are {
@@ -119,21 +153,19 @@
 }
 .card-03 {
   position: absolute;
-  top: 212px;
-  left: 969px;
+  top: 480px;
+  left: 20%;
   width: 389px;
   height: 267px;
+  border-radius: 30px 30px 0px 30px;
+  
 }
 .why-we-use {
   position: absolute;
-  top: calc(50% - 341px);
+  top: calc(45% - 341px);
   left: calc(50% - 376px);
   font-size: var(--font-size-45xl);
   color: var(--color-darkslategray);
-}
-.why-we-use:hover {
-  animation: 2s ease 0s 1 normal none swing-in-top-fws;
-  opacity: 1;
 }
 .learn-more-page {
   position: relative;
@@ -147,3 +179,22 @@
   color: var(--color-orangered);
   font-family: var(--font-inter);
 }
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%); /* Start from below the container */
+    opacity: 0; /* Initially invisible */
+  }
+  100% {
+    transform: translateY(0); /* Move to the original position */
+    opacity: 1; /* Fully visible */
+  }
+}
+.card-04,
+.card-01,
+.card-02,
+.card-03 {
+  position: absolute;
+  /* Other styles... */
+  animation: slideInFromBottom 1.5s ease-in-out; /* Apply the animation */
+}
+

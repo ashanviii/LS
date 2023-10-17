@@ -139,26 +139,41 @@
 .of-real-estate {
   margin: 0;
 }
+/* Initial styles for the elements */
+.nutshell .animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+/* Slide in from the left when animated */
+.nutshell .nutshell-image-icon.animate-on-scroll {
+  animation: slideInFromLeft 1s forwards;
+}
+
+/* Slide in from the right when animated */
+.nutshell .liquidstate-in-a.animate-on-scroll,
+.nutshell .smaller-investment-tickets-container.animate-on-scroll {
+  animation: slideInFromRight 1s forwards;
+}
 
 /* Your CSS styles here */
-
-/* Initial styles for the image, heading, and written content */
 .nutshell-image-icon, .smaller-investment-tickets-container, .liquidstate-in-a {
   opacity: 0;
   transform: translateX(0);
-  animation-play-state: paused;
+  animation-play-state: running;
 }
 
 /* Add keyframe animations for sliding in */
-.nutshell-image-icon {
+.nutshell-image-icon.animate-on-scroll {
   animation: slideInFromLeft 2s forwards;
 }
 
-.smaller-investment-tickets-container {
+.smaller-investment-tickets-container.animate-on-scroll {
   animation: slideInFromRight 2s forwards;
 }
 
-.liquidstate-in-a {
+.liquidstate-in-a.animate-on-scroll {
   animation: slideInFromRight 2.5s forwards;
 }
 
@@ -241,7 +256,7 @@
 /* Initial styles for the chart and title */
 .chart {
   opacity: 0; /* Chart initially hidden */
-  transition: opacity 1.5s;
+  transition: opacity 1s;
 }
 
 
@@ -256,7 +271,7 @@
   top: 0;
   left: -3px;
   background-color: var(--color-white);
-  height: 1012px;
+  height: 1014px;
 }
 .blockchain1 {
   position: absolute;
@@ -277,33 +292,27 @@
   justify-content: center;
 }
 .the-technology-that {
-  top: 240px;
+  top: 230px;
   left: 27%;
-  font-size: 32px;
+  font-size: 30px;
   color: var(--color-orangered);
   width: 735px;
-}
-.at-liquidestate-we:hover,
-.experience-the-future:hover,
-.the-technology-that:hover {
-  animation: 1s ease 0s 1 normal none fade-in;
-  opacity: 1;
 }
 .at-liquidestate-we,
 .experience-the-future {
   font-family: var(--font-roboto-flex);
 }
 .experience-the-future {
-  top: 298px;
+  top: 270px;
   left: 15%;
   font-size: var(--font-size-xl);
   width: 1144px;
   height: 62.16px;
 }
 .at-liquidestate-we {
-  height: calc(100% - 912.24px);
-  width: calc(100% - 854px);
-  top: 527px;
+  height: 10%;
+  width: 40%;
+  top: 500px;
   left: 697px;
   font-size: var(--font-size-5xl);
 }
@@ -322,9 +331,9 @@
   background-color: var(--color-orangered);
   position: absolute;
   width: 16.83%;
-  top: 678px;
+  top: 650px;
   right: 12.59%;
-  left: 70.58%;
+  left: 67%;
   height: 67px;
   display: flex;
   flex-direction: row;
@@ -346,10 +355,11 @@
   padding: var(--padding-lgi) 52px;
   background-color: var(--color-white);
   position: absolute;
+
   width: 16.62%;
-  top: 678px;
+  top: 650px;
   right: 32.6%;
-  left: 50.78%;
+  left: 48%;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -359,9 +369,10 @@
 .bloackchain-logo-box {
   position: relative;
   background-color: var(--color-white);
-  box-shadow: 0 6px 16px 6px rgba(0, 0, 0, 0.14);
-  width: 436px;
-  height: 429px;
+  box-shadow: 1px 6px 16px 6px rgba(0, 0, 0, 0.14);
+  width: 350px;
+  height: 350px;
+  border-radius: 20%;
   z-index: 0;
 }
 .blockchain-1-icon {
@@ -381,8 +392,8 @@
 }
 .icon-container {
   position: absolute;
-  top: 446px;
-  left: calc(50% - 605px);
+  top: 45%;
+  left: calc(55% - 605px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -882,7 +893,7 @@
 .liquidity {
   position: absolute;
   top: 390px;
-  left: 15%;
+  left: 12%;
   width: 30%;
   height: 20%;
 }
@@ -916,7 +927,7 @@
 .transparency {
   position: absolute;
   top: 387px;
-  left: 60%;
+  left: 58%;
   width: 30%;
   height: 20%;
 }
@@ -955,7 +966,7 @@
 .diversification {
   position: absolute;
   top: 662px;
-  left: 15%;
+  left: 12%;
   width: 30%;
   height: 20%;
   font-family: var(--font-montserrat);
@@ -982,7 +993,7 @@
   position: absolute;
   top: 662px;
   left: 0%;
-  left: 60%;
+  left: 58%;
   width: 30%;
   height: 20%;
   font-family: var(--font-montserrat);
@@ -998,7 +1009,7 @@
 .benefits-for-investors-child {
   position: absolute;
   top: 425.5px;
-  left: 53%;
+  left: 50%;
   border-right: 1px solid var(--color-black);
   box-sizing: border-box;
   width: 1px;
@@ -1161,7 +1172,7 @@
 .card1 {
   position: absolute;
   top: 326px;
-  left: 15%;
+  left: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1221,7 +1232,7 @@
 [data-animate-on-scroll] {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 1.5s ease;
+  transition: opacity 1.5s ease, transform 1.5s ease;
 }
 
 /* Define animation when elements are in view */
@@ -1262,18 +1273,18 @@
 .sourcing {
   position: absolute;
   top: 205px;
-  left: 17.2%;
+  left: 17.3%;
   width: 989px;
   height: 139px;
 }
 .button2 {
   cursor: pointer;
   border: 0;
-  padding: var(--padding-5xs) 7px;
+  padding: var(--padding-5xs) 9px;
   background-color: var(--color-orangered);
   position: absolute;
   top: 0;
-  left: calc(50% - 16.5px);
+  left: calc(50% - 15.5px);
   border-radius: var(--br-8xs);
   display: flex;
   flex-direction: column;
@@ -1298,7 +1309,7 @@
 .fundraising {
   position: absolute;
   top: 414px;
-  left: 265px;
+  left: 18%;
   width: 971px;
   height: 135px;
 }
@@ -1336,7 +1347,7 @@
 .launch {
   position: absolute;
   top: 626px;
-  left: 265px;
+  left: 18%;
   width: 971px;
   height: 131px;
 }
@@ -1389,7 +1400,7 @@
 .exit {
   position: absolute;
   top: 827px;
-  left: 265px;
+  left: 18%;
   width: 989px;
   height: 171.12px;
 }
@@ -1462,17 +1473,18 @@
   font-family: 'roboto flex';
   width: 655.32px;
   opacity: 0;
+  font-weight: 600;
   transform: translateY(-20px); 
 }
 
 .animated {
-  animation: slide-in 1.5s ease forwards;
+  animation: slide-in 2.5s ease forwards;
   opacity: 1;
 }
 
 @keyframes slide-in {
   from {
-    transform: translateY(-20px);
+    transform: translateY(-100px);
   }
   to {
     transform: translateY(0);
@@ -1505,7 +1517,7 @@
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  transition: transform 0.2s ease, background-color 0.2s ease;
+  transition: transform 2.2s ease, background-color 0.2s ease;
 }
 
 .button-home-page:hover {

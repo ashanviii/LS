@@ -96,8 +96,8 @@
   position: absolute;
 }
 .login2 {
-  top: 162px;
-  left: 437px;
+  top: calc(37% - 350px);
+  left: calc(50% - 283px);
   border-radius: var(--br-2xl);
   background-color: var(--color-white);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
@@ -116,7 +116,7 @@
   border: 0;
   padding: 0;
   background-color: transparent;
-  top: calc(50% - 36px);
+  top: calc(67% - 36px);
   left: 276px;
   width: 102px;
   height: 75px;

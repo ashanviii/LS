@@ -82,8 +82,8 @@
 
       <div class="nutshell">
         <div class="frame"></div>
-        <b class="liquidstate-in-a">Liquidstate In A Nutshell</b>
-        <div class="smaller-investment-tickets-container">
+        <b class="liquidstate-in-a animate-on-scroll">Liquidstate In A Nutshell</b>
+        <div class="smaller-investment-tickets-container animate-on-scroll">
           <ul class="smaller-investment-tickets-tha">
             <li class="smaller-investment-tickets">
               Smaller investment tickets thanks to larger consensus in each club
@@ -100,44 +100,48 @@
           </ul>
         </div>
         <img
-          class="nutshell-image-icon"
+          class="nutshell-image-icon animate-on-scroll"
           alt=""
           src="./public/nutshell-image@2x.png"
         />
       </div>
 
     <script>
-      const section = document.querySelectorAll('.nutshell');
-const itemsToAnimate = document.querySelectorAll('.nutshell-image-icon, .smaller-investment-tickets-container, .liquidstate-in-a');
-let animationTriggered = false;
+// Function to handle the animation when elements enter the viewport
+function handleIntersection(entries, observer) {
+  entries.forEach((entry) => {
+    const animatedElement = entry.target;
 
-function checkAnimation() {
-  if (!animationTriggered) {
-    const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
-    sections.forEach(section => {
-      const rect = section.getBoundingClientRect();
-      if (rect.top >= 0 && rect.top <= viewportHeight) {
-        itemsToAnimate.forEach(item => {
-          item.style.animationPlayState = 'running';
-        });
-        animationTriggered = true;
-      }
-    });
-  }
+    if (entry.isIntersecting) {
+      animatedElement.classList.add('animate-on-scroll');
+      observer.unobserve(animatedElement); // Stop observing once the animation is triggered
+    }
+  });
 }
 
-window.addEventListener('scroll', checkAnimation);
-checkAnimation();
+// Options for the Intersection Observer
+const options = {
+  root: null, // Use the viewport as the root
+  rootMargin: '0px', // No margin around the viewport
+  threshold: 0.2, // Adjust the threshold as needed
+};
+
+// Create an observer for the elements
+const observernutshell = new IntersectionObserver(handleIntersection, options);
+
+// Select the elements to observe
+const animatedElements = document.querySelectorAll('.animate-on-scroll');
+
+// Start observing the elements
+animatedElements.forEach((element) => {
+  observer.observe(element);
+});
+
+
+
 
 </script>
 
-
-
-
-
-
-
-    </script>
       <!-- 
         ********** OVERVIEW **********
       -->
@@ -181,9 +185,7 @@ function handleAnimations(entries, observer) {
 
         animation();
       };
-
       fadeIn(chart);
-      fadeIn(title);
 
       // Unobserve the section to avoid triggering the animations again
       observer.unobserve(section);
