@@ -174,3 +174,23 @@
   color: var(--color-gray-300);
   font-family: var(--font-inter);
 }
+
+@media only screen and (max-width: 768px){
+
+  .arrow {
+    top: calc(67% - 37px);
+    left: 2%;
+    width: 75px;
+    height: 75px;
+  }
+  .sign-up {
+    top: calc(37% - 350px);
+    left: calc(50% - 283px);
+    border-radius: var(--br-2xl);
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 4px 48px rgba(0, 0, 0, 0.25);
+    width: 566px;
+    height: 700px;
+    overflow: hidden;
+  }
+}

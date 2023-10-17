@@ -136,3 +136,12 @@
   color: var(--color-gray-300);
   font-family: var(--font-inter);
 }
+@media only screen and (max-width: 768px){
+
+  .arrow1 {
+    top: calc(67% - 37px);
+    left: 2%;
+    width: 75px;
+    height: 75px;
+  }
+}
