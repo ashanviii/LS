@@ -1360,8 +1360,7 @@
   text-align: center;
 }
 .b3,
-.button4,
-.exit1 {
+.button4 {
   position: absolute;
 }
 .button4 {
@@ -1382,6 +1381,7 @@
   align-items: center;
   justify-content: center;
   width: 55px;
+  position: absolute;
 }
 .wait-until-completion-of-the-p {
   margin: 1px;
@@ -1600,9 +1600,11 @@
   width: 76.39px;
   flex-shrink: 0;
 }
+
 .about,
 .benefits,
 .contact,
+.block,
 .overview2 {
   cursor: pointer;
   border: 0;
@@ -1675,14 +1677,22 @@
 
 
 /*
-*********** RESPONSIVE FOR 768px **********
+*********** RESPONSIVE FOR 1200pxpx **********
 */
 
 
 
 
-/* Additional adjustments for 768px and above */
-@media only screen and (max-width: 768px) {
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px)  {
+
   .social-media,
   .email {
     font-size: 25px;
@@ -1695,8 +1705,8 @@
   }
 
   .email {
-    top: 138px;
-    margin-left: 39%; 
+    top: 32%;
+    margin-left: 10%; 
   }
   .instagram {
     left: 70%; 
@@ -1720,7 +1730,7 @@
   .armandkamgarhecedu-mmetral {
     top: 200px; /* Adjust top position */
     width: 500px; /* Adjust width */
-    margin-left: 39%;
+    margin-left: 10%;
     font-size: medium;
   }
 
@@ -1746,15 +1756,15 @@
   .smaller-investment-tickets-container {
     top: 45%;
     left: 52%;
-    font-size: 16px;
-    width: 348px;
+    font-size: 18px;
+    width: 500px;
   }
 
   .nutshell-image-icon {
     position: absolute;
     top: 112px;
     left: 0;
-    width: 361px;
+    width: 550px;
     height: 647px;
     object-fit: cover;
   }
@@ -1767,7 +1777,7 @@
     height: 238px;
   }
   .chart {
-    left: 7%;
+    left: 23%;
     width: 647px;
     height: 365px;
     padding: 53px 53px;
@@ -1776,31 +1786,31 @@
   /* BLOCKCHAIN */
 
   .blockchain1 {
-    left: 35%;
+    left: 40%;
     font-size: 50px;
     width: 80%;
   }
   .the-technology-that {
     top: 20%;
-    left: 13%;
+    left: 17%;
     font-size: 24px;
     width: 75%;
   }
   .experience-the-future {
     top: 25%;
-    left: 10%;
+    left: 15%;
     font-size: 20px;
     width: 80%;
   }
   .at-liquidestate-we {
     height: 20%;
     width: 40%;
-    top: 45%;
+    top: 42%;
     left: 50%;
-    font-size: 16px;
+    font-size: 20px;
   }
   .get-early-access {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 600;
   }
   .get-early-access-button {
@@ -1811,7 +1821,7 @@
     height: 40px;
   }
   .learn-more {
-    font-size: 13px;
+    font-size: 14px;
   }
   .learn-more-button {
     width: 17.83%;
@@ -1821,12 +1831,12 @@
     left: 50.78%;
   }
   .bloackchain-logo-box {
-    width: 236px;
-    height: 229px;
+    width: 300px;
+    height: 300px;
   }
   .icon-container {
-    top: 45%;
-    left: 10%;
+    top: 41%;
+    left: 15%;
   }
  
 
@@ -1836,7 +1846,7 @@
   top: 94px;
   font-size: 45px;
   width: 80%;
-  left: 15%;
+  left: 26.5%;
   scroll-behavior: fixed;
 }
 
@@ -1847,11 +1857,11 @@
 
 .logistics-card {
   top: 265px;
-  left: 50%;
+  left: 36%;
 }
 .infrastructure-card {
   top: 265px;
-  left: 95%;
+  left: 67%;
 }
 .investment-oppportunities {
   flex-direction: row;
@@ -1877,7 +1887,7 @@
 }
 .liquidity {
   top: 390px;
-  left: 6%;
+  left: 10%;
 }
 /* Transperancy */
 .investors-who-acquire {
@@ -1888,7 +1898,7 @@
 }
 .transparency {
   top: 390px;
-  left: 57%;
+  left: 60%;
 }
 /* Divercification */
 .our-platform-allow {
@@ -1899,7 +1909,7 @@
 }
 .diversification {
   top: 680px;
-  left: 6%;
+  left: 10%;
 }
 /* Safety */
 .to-enhance-investor-container {
@@ -1910,11 +1920,11 @@
 }
 .safety {
   top: 670px;
-  left: 57%;
+  left: 60%;
 }
 .benefits-for-investors1 {
   top: 190px;
-  left:15%;
+  left:28%;
   font-size: 50px;
 }
 .benefits-for-investors-child {
@@ -1934,8 +1944,8 @@
 .benefits-for-investment {
   position: absolute;
   top: 15%;
-  left: 15%;
-  font-size: 35px;
+  left: 25%;
+  font-size: 37px;
   
 }
 .b4-icon {
@@ -1954,7 +1964,7 @@
 }
 .card4 {
   top: 63%;
-  left: 50%
+  left: 55%
 }
 .b3-icon {
   width: 55px;
@@ -1971,7 +1981,7 @@
 }
 .card3 {
   top: 35%;
-  left: 50%
+  left: 55%
 }
 .new-pool-of{
   width: 379px;
@@ -1987,7 +1997,7 @@
 }
 .card2 {
   top: 63.5%;
-  left: 5%;
+  left: 15%;
 }
 .low-investors-relation {
   width: 379px;
@@ -1999,7 +2009,7 @@
 }
 .card1 {
   top: 37%;
-  left: 5%;
+  left: 15%;
 }
 .b1-icon {
   width: 55px;
@@ -2021,7 +2031,7 @@
 }
 .sourcing {
   top: 205px;
-  left: 10.5%;
+  left: 24.5%;
   width: 600px;
   height: 139px;
 }
@@ -2033,7 +2043,7 @@
 }
 .fundraising {
   top: 414px;
-  left: 10.5%;
+  left: 24.5%;
   width: 600px;
 }
 .launch1 {
@@ -2049,7 +2059,7 @@
 }
 .launch {
   top: 626px;
-  left: 10.5%;
+  left: 24.5%;
   width: 600px;
 }
 .b3 {
@@ -2071,7 +2081,7 @@
 .exit {
   position: absolute;
   top: 827px;
-  left: 18%;
+  left: 29.5%;
   width: 989px;
   height: 171.12px;
 }
@@ -2080,7 +2090,7 @@
 }
 .how-it-works1 {
   top: 72px;
-  left: 32%;
+  left: 39%;
   font-size: 45px;
 }
 
@@ -2110,14 +2120,15 @@
   left: 80px;
 }
 .join-other-professional {
-  top: 25%;
+  top: 27%;
   font-size: 30px;
-  font-weight: 500;
+  width: 40%;
+  font-weight: 600;
 }
 .browse-our-investment {
-  top: 34%;
+  top: 37%;
   font-size: 16px;
-  width: 60%;
+  width: 35%;
 }
 .get-started {
   font-size: var(--font-size-xl);
@@ -2127,14 +2138,15 @@
   padding: 14px 27px;
   top: 490px;
   left: 80px;
-  width: 200px;
+  width: 20vw;
   height: 50px;
 }
 .pc-icon {
-  top: 45%;
-  left: 45%;
-  width: 50%;
-  height: 30%;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  width: 550px;
+  height: 478px;
   object-fit: cover;
 }
 
@@ -2151,42 +2163,41 @@
   left: 20%;
 }
 .about {
- left: 30%;
+ left: 99%;
 }
 .about,
 .benefits,
 .contact,
 .overview2,
-.blockchain,
+.block,
 .home {
   font-size: 18px;
   font-weight: 500;
 }
 
 .home{
-  left: 26%;
+  left: 53%;
 }
 
 .benefits{
-  left: 6%;
+  left: 40%;
 }
 
-.blockchain{
-  left: 0%;
+.block{
+  left: 45%;
 }
-.about{
-  left: 53%;
-}
+
 .overview2{
-  left: 17%;
+  left: 67%;
 }
 .contact {
-  left: 10%;
+  left: 65%;
 }
 .navigation {
   top: 35px;
   left: 10%;
   gap: 20px;
+  width: 50vmax;
 }
 .liquidstate1 {
   position: absolute;
@@ -2198,8 +2209,22 @@
 
 
 .desktop {
-  max-width: 100%;
+  max-width: 100vmax;
   max-height: 8185px;
 }
-  
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
