@@ -1625,21 +1625,6 @@
 .contact {
   width: 98px;
 }
-.block{
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  position: relative;
-  font-size: var(--font-size-5xl);
-  font-weight: 500;
-  font-family: var(--font-inter);
-  color: var(--color-darkslategray);
-  text-align: left;
-  display: inline-block;
-  width: 77px;
-  flex-shrink: 0;
-}
 .navigation {
   position: absolute;
   top: 39px;
