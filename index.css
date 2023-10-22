@@ -504,7 +504,8 @@
   position: absolute;
   top: 16px;
   left: 107px;
-  font-weight: bold;
+  font-weight: 700;
+  font-size: var(--font-size-base);
 }
 .join-us-in {
   position: absolute;
